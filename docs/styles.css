@@ -3,11 +3,61 @@ body {
 }
 
 .upgrade {
-    flex: 0.1;
-    display: inline-block;
-    background-color: rgb(142, 47, 194);
-    padding: 3px;
-    margin: 3px;
+    width: 96%;
+    height: 15%;
+    background-color: rgb(31, 2, 31);
+    border: 2px solid rgb(182, 166, 181);
+    border-radius: 1% / 6%;
+    margin: 1%;
+    position: relative;
+}
+.upgrade img {
+    width: auto;
+    height: 80%;
+    left: 4%;
+    top: 10%;
+    position: absolute;
+    float: left;
+}
+.upgrade h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    color: white;
+    text-align: left;
+    bottom: 30%;
+    left: 20%;
+    position: absolute;
+}
+.upgrade h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    top: 35%;
+    left: 20%;
+    position: absolute;
+}
+.upgrade p {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    color: white;
+    text-align: right;
+    right: 2%;
+    bottom: 30%;
+    width: 50%;
+    position: absolute;
+}
+.upgrade button {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(19, 0, 29);
+    border: 2px solid rgb(182, 166, 181);
+    border-radius: 8% / 30%;
+
+    right: 2%;
+    top: 55%;
+    position: absolute;
 }
 
 #clicks {
@@ -33,7 +83,7 @@ body {
     height: 100%;
     background-color: rgb(19, 0, 29);
     border: 2px solid rgb(182, 166, 181);
-    border-radius: 2%;
+    border-radius: 2% / 3%;
 }
 
 #upgrades {
@@ -41,13 +91,17 @@ body {
     height: 100%;
     background-color: rgb(19, 0, 29);
     border: 2px solid rgb(182, 166, 181);
-    border-radius: 2%;
-
-    display: flex;
-    flex-direction: column;
-    overflow-x: auto;
-    white-space: nowrap;
-    overflow: scroll;
+    border-radius: 2% / 2.5%;
+    overflow: auto;
+    overflow-y: scroll;
+}
+#upgrades::-webkit-scrollbar{
+    background: transparent;
+    width: 10px;
+}
+#upgrades::-webkit-scrollbar-thumb {
+    background-color: rgb(182, 166, 181);
+    border-radius: 10px;
 }
 
 #copyright {
